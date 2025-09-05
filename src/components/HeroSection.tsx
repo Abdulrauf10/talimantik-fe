@@ -1,6 +1,7 @@
 import { Button } from '@/components/ui/button';
 import heroBrain from '@/assets/hero-brain.png';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const HeroSection = () => {
   return (
@@ -21,13 +22,15 @@ const HeroSection = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-            <Button
-              variant="default"
-              size="lg"
-              className="text-lg px-8 py-4 h-auto"
-            >
-              Mulai Sekarang - Hanya 10rb
-            </Button>
+            <Link href={'/register'}>
+              <Button
+                variant="default"
+                size="lg"
+                className="text-lg px-8 py-4 h-auto"
+              >
+                Mulai Sekarang - Hanya 10rb
+              </Button>
+            </Link>
             <Button
               variant="outline"
               size="lg"

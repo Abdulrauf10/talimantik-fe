@@ -1,6 +1,7 @@
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
+import Link from 'next/link';
 
 const pricingPlan = {
   name: 'Talimantik',
@@ -64,14 +65,15 @@ const PricingSection = () => {
                 </li>
               ))}
             </ul>
-
-            <Button
-              variant="default"
-              size="lg"
-              className="w-full text-lg py-6 h-auto mb-4"
-            >
-              {pricingPlan.cta}
-            </Button>
+            <Link href={'/register'}>
+              <Button
+                variant="default"
+                size="lg"
+                className="w-full text-lg py-6 h-auto mb-4"
+              >
+                {pricingPlan.cta}
+              </Button>
+            </Link>
 
             <div className="text-center text-sm text-muted-foreground">
               <p className="mb-2">💳 Pembayaran aman dengan enkripsi SSL</p>
