@@ -65,7 +65,12 @@ const PricingSection = () => {
                 </li>
               ))}
             </ul>
-            <Link href={'/register'}>
+            <Link
+              href={
+                'https://app.sandbox.midtrans.com/payment-links/1757154275073'
+              }
+              target="_blank"
+            >
               <Button
                 variant="default"
                 size="lg"

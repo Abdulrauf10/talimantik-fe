@@ -22,7 +22,12 @@ const HeroSection = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-            <Link href={'/register'}>
+            <Link
+              href={
+                'https://app.sandbox.midtrans.com/payment-links/1757154275073'
+              }
+              target="_blank"
+            >
               <Button
                 variant="default"
                 size="lg"

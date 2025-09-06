@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { Button } from './ui/button';
 
 const CTASection = () => {
@@ -20,13 +21,20 @@ const CTASection = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-            <Button
-              variant="secondary"
-              size="lg"
-              className=" px-10 py-6 h-auto text-xl bg-white text-primary hover:bg-white/90"
+            <Link
+              href={
+                'https://app.sandbox.midtrans.com/payment-links/1757154275073'
+              }
+              target="_blank"
             >
-              Beli Sekarang - Rp 10.000
-            </Button>
+              <Button
+                variant="secondary"
+                size="lg"
+                className=" px-10 py-6 h-auto text-xl bg-white text-primary hover:bg-white/90"
+              >
+                Beli Sekarang - Rp 10.000
+              </Button>
+            </Link>
             <Button
               variant="secondary"
               size="lg"
