@@ -66,9 +66,7 @@ const PricingSection = () => {
               ))}
             </ul>
             <Link
-              href={
-                'https://app.sandbox.midtrans.com/payment-links/1757154275073'
-              }
+              href={'https://app.midtrans.com/payment-links/1757410536059'}
               target="_blank"
             >
               <Button

@@ -22,9 +22,7 @@ const CTASection = () => {
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
             <Link
-              href={
-                'https://app.sandbox.midtrans.com/payment-links/1757154275073'
-              }
+              href={'https://app.midtrans.com/payment-links/1757410536059'}
               target="_blank"
             >
               <Button
